@@ -1,0 +1,13 @@
+ 7  6  1  5  8  5  2  5  4  8  2 
+-1
+find 3
+remove 4
+remove 4
+find 7
+remove 3
+insert 7
+insert 9
+remove 6
+remove 2
+find 3
+*

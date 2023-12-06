@@ -1,0 +1,21 @@
+c/c++
+python
+sql
+git
+
+html css javascrip
+php
+c#
+
+
+tiếng anh
+
+ctdl giai thuật
+lập trình  hướng đối tượng
+ứng dụng giải thuật
+vxl
+vi điều khiển 8051,pic,stm
+ 
+xử lý ảnh
+esp
+cơ sở dữ liệu

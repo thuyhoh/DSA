@@ -1,0 +1,15 @@
+$makeroot 10
+$insert 11 10
+$insert 1 10
+$insert 3 10
+$insert 5 11
+$insert 4 11
+$insert 8 3
+$insert 2 3
+$insert 7 3
+$insert 6 4
+$insert 9 4
+$inorder
+$postorder
+$preorder
+#
