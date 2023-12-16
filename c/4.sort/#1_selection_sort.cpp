@@ -17,4 +17,8 @@ void selection_sort(int a[],int n){
 
 int main(){
 	int a[]={6,1,4,6,8,3,5,0,7};
+	selection_sort(a,9);
+	for(int i = 0; i< 9; i++){
+		printf("%d ",a[i]);
+	}
 }

@@ -13,7 +13,7 @@ void insert_arr(int x,int p){
 }
 
 void delete_arr(int* arr,int p){
-    int index = i
+    int index = p;
 	for(int i = 0; i< n-1; i++){
     	*(arr + i) = *(arr+(i+1));
 	}
