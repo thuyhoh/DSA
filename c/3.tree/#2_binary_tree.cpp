@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 typedef struct Bnode{
 	int id;
@@ -8,7 +9,11 @@ typedef struct Bnode{
 BNode* root;
 
 BNode* makeNode(int v){
-	BNode
+	BNode* p = (BNode*)malloc(sizeof(BNode));
+	p->id  = v;
+	p->leftchild = NULL;
+	p->rightchild = NULL;
+	return p;
 }
 
 void inorder(BNode* r){

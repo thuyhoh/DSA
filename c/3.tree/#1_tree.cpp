@@ -115,7 +115,7 @@ int depthNode(int v,Node* r, int d){
 	for(Node* p = r->leftmostchild; p != NULL; p = p->rightsibling){
 		if(p->id == v) return d+1;
 		int rs = depthNode(v,p,d+1);
-		if(rs>-1) return rs;
+		if(rs > -1) return rs;
 	}
 	return -1;
 	

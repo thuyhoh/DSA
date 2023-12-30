@@ -40,7 +40,7 @@ class dlist
 	unsigned int num;
 	public:
 		typedef dlist_iterator<T> iterator;
-		typedef dlist_reverse_iterator<T> reverse_iterator;
+		typedef dlist_reverse_iterator <T> reverse_iterator;
 		iterator begin(){return head;}
 		iterator end(){return nullptr;}
 		reverse_iterator rbegin(){return tail;}
