@@ -1,0 +1,40 @@
+/*
+    ma trận kề: 
+    
+    **với đồ thì vô hướng ma trận kề có đỉnh n, cần ma trận vuông nxn có các phần tử là 0
+    hoặc 1. A{aij, aij = 1 nếu cạnh (i,j) là 1 cạnh của đồ thị,aij = 0 khi aij khong là 1 cạnh của dồ thị}
+    Tính chât: là ma trận vuông đối xứng với đường chéo chính tổng các phần tử trên ma trận bằng 2 lần số cạnh 
+    tổng các phần tử trên hàng hoặc cột thứ u là bậc của u.
+
+    **đối với đồ thị có hướng ma trận kề cũng có đỉnh là n là một ma trận vuông nxn có các phần tử là 0 hoặc 1
+    A={aij, aij = 1 nếu cạnh (i,j) là 1 cạnh của đồ thị, aij = 0 khi cạnh (i,j)không là 1 cạnh của đồ thị }
+    Tính chất: có thể không dối xứng
+        - tổng các phần tử trên ma trận bằng số cạnh
+        - tổng các phần tử trên hàng thứ u là bậc ra của đỉnh u
+        - tổng các phần tử trên cột thứ u là bán bậc vào đỉnh u
+
+    ưu điểm: đơn giản dễ cài đăt, dễ dàng kiểm tra 2 đỉnh có kề nhau hay không O(1) bằng cách kiểm tra giá trị A[i,j]
+    nhược điểm: tốn bộ nhớ nên không thể biểu diễn được đồ thị có số lượng lớn
+*/
+
+/*
+    danh sách cạnh: thường biểu diễn khi đồ thị thưa(số lượng cạnh <= 6 lần số đỉnh)
+    
+    **đối với đồ thị vô hướng nếu tồn tại cạnh giữa hai đỉnh u,v. chỉ cần liệt kê cạnh (u,v) không cần liệt kê cạnh (v,u)
+    thường chọn u < v. thường liệt kê các cạnh theo thứ tự tăng dần đỉnh đầu của các cạnh 
+    
+    **đối với dồ thị có hướng, mỗi cạnh là bộ có tính đến thứ tự tăng dần
+
+    ưu điểm: tiết kiệm được bộ nhớ nếu đồ thị thưa, thuận lợi cho các bài toán chỉ liên quan đến cạnh đồ thị 
+    nhược điểm: khi cần duyệt các đỉnh kề với đỉnh nào đó bắt buộc phải đuyệt tất cả các cạnh dẫn đến chi phí tính toán lớn 
+
+*/
+/*
+    danh sách kề:đố với mỗi đỉnh u của đồ thị, ta lưu trữ danh sách các dỉnh kề với u. trong c++ để lưu trữ danh sách kề của 1 đỉnh ta dùng 1 vector
+    khi đó để lưu trữ toàn bộ đanh sách kề của các đỉnh ta dùng mảng các vector
+
+    ưu điểm: dễ dàng duyệt các đỉnh kề của một đỉnh
+        dễ dàng duyệt các cạnh của đồ thị trong mỗi danh sách kề
+        tối ưu về phương pháp biểu diễn
+        nhược điển: khó khăn cho người có kỹ năng lập trình yếu
+*/

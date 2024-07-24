@@ -29,5 +29,5 @@ int binary_search_nonrecursive(int a[], int n, int k){
 
 int main(){
 	int a[5]  = {1,2,3,4,5};
-	printf("%d",binary_search_recursive(a,0,5,4));
+	printf("%d",binary_search_nonrecursive(a,5,1));
 }
